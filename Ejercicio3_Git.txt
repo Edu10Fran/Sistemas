@@ -1,54 +1,54 @@
-> cd libro-git
-> git reset --hard 48ed8
-> git remote remove origin
+cd libro-git
+git reset --hard 48ed8
+git remote remove origin
 
 Ejercicio 1
-> git branch bibliografia
-> git branch -av // Nota: A mí me funciona el comando --> git branch
+git branch bibliografia
+git branch -av // Nota: A mí me funciona el comando --> git branch
 
 Ejercicio2
 Nota: También se puede usar --> echo
-> cat > capitulos/capitulo4.txt
+cat > capitulos/capitulo4.txt
 En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.
 Ctrl+D
-> git add .
-> git commit -m "Añadido capítulo 4."
-> git log --graph --all --oneline
+git add .
+git commit -m "Añadido capítulo 4."
+git log --graph --all --oneline
 
 
 Ejercicio 3
-> git checkout bibliografia
-> cat > bibliografia.txt
+git checkout bibliografia
+cat > bibliografia.txt
 - Chacon, S. and Straub, B. Pro Git. Apress.
 Ctrl+D
-> git add .
-> git commit -m "Añadida primera referencia bibliográfica."
-> git log --graph --all --oneline
+git add .
+git commit -m "Añadida primera referencia bibliográfica."
+git log --graph --all --oneline
 
 Ejercicio 4
-> git checkout master
-> git merge bibliografia
-> git log --graph --all --oneline
-> git branch -d bibliografia
-> git log --graph --all --oneline
+git checkout master
+git merge bibliografia
+git log --graph --all --oneline
+git branch -d bibliografia
+git log --graph --all --oneline
 
 Ejercicio 5
-> git branch bibliografia
-> git checkout bibliografia
-> cat > bibliografia.txt
+git branch bibliografia
+git checkout bibliografia
+cat > bibliografia.txt
 - Scott Chacon and Ben Straub. Pro Git. Apress.
 - Ryan Hodson. Ry's Git Tutorial. Smashwords (2014)
 Ctrl+D
-> git commit -a -m "Añadida nueva referencia bibliográfica."
-> git checkout master
-> cat > bibliografia.txt
+git commit -a -m "Añadida nueva referencia bibliográfica."
+git checkout master
+cat > bibliografia.txt
 - Chacon, S. and Straub, B. Pro Git. Apress.
 - Loeliger, J. and McCullough, M. Version control with Git. O'Reilly.
 Ctrl+D
-> git commit -a -m "Añadida nueva referencia bibliográfica."
-> git merge bibliografia
-> git nano bibliografia
-> cat > bibliografia.txt
+git commit -a -m "Añadida nueva referencia bibliográfica."
+git merge bibliografia
+git nano bibliografia
+cat > bibliografia.txt
 ● Chacon, S. and Straub, B. Pro Git. Apress.
 ● Loeliger, J. and McCullough, M. Version control with Git.
 O’Reilly.
@@ -56,5 +56,5 @@ O’Reilly.
 Ctrl+D
 
 Nota: Aquí realizamos los cambios indicados en el fichero
-> git commit -a -m "Solucionado conflicto bibliografía."
-> git log --graph --all --oneline
+git commit -a -m "Solucionado conflicto bibliografía."
+git log --graph --all --oneline
